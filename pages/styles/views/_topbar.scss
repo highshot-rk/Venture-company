@@ -1,0 +1,237 @@
+.subMenuPopoverPaper {
+  width: 100%;
+  left: 0 !important;
+  max-width: 100% !important;
+  border-radius: 0 !important;
+  animation: animWrapper .3s ease-in-out;
+  pointer-events: auto;
+  .sub-menu {
+    padding: 47px 88px 44px;
+    position: relative;
+    .btnClose {
+      position: absolute;
+      right: 0;
+      top: 20px;
+      color: $primary;
+      cursor: pointer;
+    }
+    .topbar-menu-container {
+      color: #030303;
+      .title {
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 37px;
+        text-transform: uppercase;
+        display: inline;
+      }
+      .border {
+        padding-bottom: 8px;
+        border-bottom: 3px solid $primary;
+      }
+      .menu-container {
+        margin-top: 37px;
+      }
+      .menu-column {
+        .first {
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        .second {
+          font-size: 22px;
+          margin-bottom: 10px;
+          padding-left: 50px;
+        }
+      }
+      .consulting-menu-container {
+        margin: -8px;
+        margin-top: 37px;
+        display: flex;
+        width: calc(100% + 16px);
+        .menu-column {
+          flex: 1;
+          padding: 8px;
+          .title {
+            height: 34px;
+            display: block;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .Office-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        .menu-column {
+          margin-right: 50px;
+          width: 180px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          .first {
+            font-size: 22px;
+          }
+          .country {
+            font-size: 25px;
+            font-weight: 500;
+          }
+        }
+      }
+      .language-menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 34px;
+        .menu-column {
+          padding: 0 100px;
+          border-right: 1px solid rgba(112, 112, 112, 0.2);
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            border-right: none;
+          }
+          .language {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            span {
+              font-size: 22px;
+              color: #030303;
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.office {
+    transform: translate(0, 93px) !important;
+    .sub-menu {
+      padding-top: 29px;
+    }
+  }
+}
+.circular-image-small {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+.avatar-image-small {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+}
+.rating-container {
+  margin-right: 10px;
+  margin-left: 2rem;
+  .name {
+    color: #30304e;
+  }
+  .star {
+    font-size: 18px;
+    color: #ff6869;
+  }
+  .value {
+    color: #8d8d8d;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+}
+.notification-image {
+  width: 30px;
+  margin-right: 25px;
+}
+.profile-menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 30px 0 10px;
+  span {
+    margin-right: 5px;
+  }
+}
+
+@include media(1700px) {
+  .subMenuPopoverPaper {
+    .sub-menu {
+      .topbar-menu-container {
+        .language-menu-container {
+          .menu-column {
+            padding: 0 70px;
+          }
+        }
+      } 
+    }
+  }
+}
+
+@include media(1600px) {
+  .subMenuPopoverPaper {
+    .sub-menu {
+      .topbar-menu-container {
+        .language-menu-container {
+          .menu-column {
+            padding: 0 60px;
+            .first {
+              font-size: 20px;
+            }
+            .language {
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+
+@include media(1400px) {
+  .subMenuPopoverPaper {
+    .sub-menu {
+      .topbar-menu-container {
+        .language-menu-container {
+          .menu-column {
+            padding: 0 50px;
+            .first {
+              font-size: 18px;
+            }
+            .language {
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+
+@include media(767px) {
+  .subMenuPopoverPaper {
+    .sub-menu {
+      padding-left: 20px;
+      padding-right: 20px;
+      .topbar-menu-container {
+        margin-bottom: 50px;
+        .language-menu-container {
+          .menu-column {
+            padding: 0;
+            border-right: none;
+            width: 100%;
+            .first {
+              font-size: 16px;
+            }
+            .language {
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      } 
+    }
+  }
+}

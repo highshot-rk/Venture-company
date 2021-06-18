@@ -1,0 +1,399 @@
+.ready {
+  padding: 50px 175px;
+  height: 805px;
+  background-image: url('/assets/images/ready.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .ready-container {
+    height: 100%;
+    color: #FFFFFF;
+    .ready-title {
+      font-size: 59px;
+      font-weight: bold;
+    }
+    .ready-market {
+      font-size: 27px;
+    }
+    .talk-container {
+      .ready-description {
+        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .select-service {
+        width: 543px;
+      }
+    }
+    .experience {
+      width: 576px;
+      margin-top: -35px;
+    }
+    .info-container {
+      width: 576px;
+      .full-name {
+        margin-top: 10px;
+      }
+      .btnSubmit {
+        margin-top: 27px;
+        padding: 15px 16px;
+        width: 100%;
+        height: 73px;
+        font-size: 20px;
+        &:hover {
+          background-color: $primary;
+          border-color: $primary;
+        }
+      }
+    }
+  }
+  @include media(1023px) {
+    .ready-container {
+      .ready-title {
+        margin-bottom: 0px !important;
+      }
+      .ready-market {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        font-size: 20px;
+      }
+      .talk-container {
+        .ready-description {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: #202A36;
+  .footer-container {
+    padding-left: 155px;
+    padding-right: 137px;
+    padding-top: 45px;
+    .image-wrapper {
+      margin-top: 15px;
+      .email-content {
+        margin-top: 110px;
+      }
+      .mail-title {
+        color: $primary;
+        margin-left: 10px;
+        font-size: 21px;
+      }
+    }
+    .social-wrapper {
+      height: fit-content;
+      align-items: center;
+      .social-item {
+        .normal {
+          display: block;
+        }
+        .active {
+          display: none;
+        }
+        &:hover {
+          .normal {
+            display: none;
+          }
+          .active {
+            display: block;
+          }
+        }
+      }
+      img {
+        margin: 0 20px;
+      }
+    }
+    .footer-description {
+      color: white;
+      font-size: 22px;
+      width: 80%;
+    }
+    .footer-input {
+      .MuiOutlinedInput-root {
+        &:hover {
+          background: #9A9B9F;
+          color: #ffffff;
+          .MuiOutlinedInput-notchedOutline {
+            border: unset;
+          }
+          .MuiInputBase-input::placeholder {
+            color: #ffffff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .btnSubmit {
+      padding: 15px 16px;
+      border-radius: 10px;
+      margin-left: 15px;
+      min-width: 150px;
+      height: 73px;
+      font-size: 22px;
+    }
+    .footer-item {
+      color: rgba(255, 255, 255, 0.41);
+      font-size: 20px;
+    }
+    .mobile-footer {
+      span {
+        margin: 8px 0;
+      }
+    }
+    @include media(767px) {
+      .footer-description {
+        width: 100%;
+      }
+      .social-wrapper {
+        img {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+}
+.faq {
+  padding: 113px 459px 120px;
+  text-align: center;
+  background: #F3F3F3;
+  .title {
+    color: #707070 !important;
+    font-size: 36px;
+    margin-bottom: 22px;
+  }
+  .description {
+    margin-bottom: 53px;
+    font-size: 18px;
+  }
+  .MuiAccordionSummary-content {
+    p {
+      font-size: 20px;
+    }
+  }
+  .MuiAccordionDetails-root {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+.share {
+  .share-icon {
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.sharePopover {
+  width: 180px;
+  transform: translate(0px, 21px) !important;
+  .share-on {
+    border-bottom: 1px solid #EDEDED;
+  }
+  .MuiListItem-button {
+    &:not(:last-child) {
+      border-bottom: 1px solid #EDEDED;
+    }
+    .normal {
+      display: block;
+    }
+    .hover {
+      display: none;
+    }
+    &:hover {
+      background-color: $primary;
+      color: #ffffff;
+      .normal {
+        display: none;
+      }
+      .hover {
+        display: block;
+      }
+    }
+  }
+}
+
+@include media(1500px) {
+  .ready {
+    .ready-container {
+      .talk-container {
+        .ready-description {
+          font-size: 30px;
+        }
+        .select-service {
+          width: 400px;
+        }
+      }
+    }
+  }
+  .footer {
+    .footer-container {
+      padding-left: 140px;
+      padding-right: 120px;
+      .footer-description {
+        font-size: 20px;
+      }
+      .image-wrapper {
+        .mail-title {
+          font-size: 18px;
+        }
+      }
+      .footer-item {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include media(1600px) {
+  .faq {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+@include media(1400px) {
+  .faq {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+  .footer {
+    .footer-container {
+      padding-left: 120px;
+      padding-right: 100px;
+      .footer-description {
+        font-size: 18px;
+      }
+      .image-wrapper {
+        .mail-title {
+          font-size: 18px;
+        }
+      }
+      .footer-item {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include media(1200px) {
+  .faq {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .ready {
+    padding: 50px 100px;
+    .ready-container {
+      .talk-container {
+        .ready-description {
+          font-size: 35px;
+        }
+        .select-service {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    .footer-container {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}
+@include media(1024px) {
+  .faq {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .footer {
+    .footer-container {
+      .footer-description {
+        font-size: 16px;
+      }
+      .image-wrapper {
+        .mail-title {
+          font-size: 14px;
+        }
+      }
+      .footer-item {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@include media(768px) {
+  .faq {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@include media(375px) {
+  .faq {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 56px;
+    padding-bottom: 60px;
+    .title {
+      font-size: 24px;
+    }
+    .description {
+      font-size: 16px !important;
+      margin-bottom: 31px;
+    }
+    .MuiAccordionSummary-content p {
+      font-size: 18px;
+    }
+    .MuiAccordionDetails-root p {
+      font-size: 18px;
+    }
+  }
+  .ready {
+    padding: 54px 40px;
+    height: 775px;
+    .ready-container {
+      .ready-title {
+        font-size: 40px;
+      }
+      .info-container {
+        .btnSubmit {
+          height: 60px;
+          font-size: 16px;
+        }
+      }
+      .talk-container {
+        .ready-description {
+          font-size: 20px;
+          margin-top: 0;
+          margin-bottom: 24px;
+        }
+        .select-service {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    .footer-container {
+      padding: 40px 40px 0;
+      .footer-description {
+        font-size: 14px;
+      }
+      .image-wrapper {
+        .email-content {
+          margin-top: 60px;
+        }
+        .mail-title {
+          font-size: 11px;
+        }
+      }
+      .btnSubmit {
+        width: 105px;
+        height: 60px;
+        font-size: 14px;
+      }
+      .footer-item {
+        font-size: 12px;
+      }
+    }
+  }
+}

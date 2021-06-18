@@ -1,0 +1,57 @@
+.fade-in {
+  @include keyframeMaker(fade-in) {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  animation: fade-in 1s #{bezier()};
+}
+
+@keyframes spin {
+  0% {transform: rotate(0)}
+  100% {transform: rotate(360deg)}
+}
+
+@keyframes grow {
+  0% {
+    visibility: hidden;
+    bottom: -100%;
+    opacity: 0;
+  }
+  50% {
+    visibility: visible;
+    bottom: -30%;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes animWrapper {
+0% {
+  display: none;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+1% {
+  display: block;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+30% {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+100% {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+}
+.spin {
+  animation: spin 3s infinite linear;
+}

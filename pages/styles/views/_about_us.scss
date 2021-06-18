@@ -1,0 +1,659 @@
+.about-us {
+  .image-containter {
+    height: 562px;
+    background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.7)), url(/assets/images/about/about_us.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .about-container {
+      color: #ffffff;
+      display: flex;
+      .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 52px;
+        padding-left: 287px;
+        .about-text {
+          padding-left: 10px;
+          border-left: 5px solid $primary;
+          font-size: 1.25em;
+        }
+        .description {
+          width: 700px;
+          font-size: 1.25em;
+        }
+        .title {
+          font-size: 3.75em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #CFCFCF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 0 280px;
+  }
+  .about-us-wrapper {
+    padding: 120px 245px 210px;
+    text-align: center;
+    span {
+      font-size: 2.25em;
+      font-weight: bold;
+      &:nth-child(2) {
+        color: $primary;
+      }
+    }
+    .text {
+      text-align: left;
+      height: 190px;
+      font-size: 23px;
+      margin-top: 48px;
+      overflow: hidden;
+      position: relative;
+      line-height: 2em;
+      &.readMore {
+        height: unset;
+      }
+    }
+    .btnReadMore {
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 32px;
+    }
+    .blur {
+      text-align: left;
+      margin-top: 0px;
+      filter: blur(5px);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  .navigation-title {
+    text-align: center;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+    .black {
+      color: #000000;
+    }
+    .primary {
+      color: $primary;
+    }
+  }
+  .btnConsultation {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    width: 464px;
+    height: 97px;
+  }
+  .about-culture {
+    .image-containter {
+      height: 910px;
+      background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.7)), url(/assets/images/about/about_culture.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      .title {
+        color: #ffffff;
+        font-size: 70px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        padding: 0 97px;
+      }
+    }
+    .card-container {
+      margin-top: -180px;
+      padding-left: 308px;
+      padding-right: 308px;
+      .card-wrapper {
+        .culture-card {
+          background: #ffffff;
+          opacity: 0.85;
+          .header {
+            height: 135px;
+            background: $primary;
+            color: #ffffff;
+            font-size: 29px;
+            padding: 40px 35px 25px;
+            font-weight: bold;
+          }
+        }
+        .card-content {
+          height: 270px;
+          background: #ffffff;
+          font-size: 18px;
+          padding: 30px 35px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+      }
+    }
+    .btnWrapper {
+      margin-top: 100px;
+      margin-bottom: 220px;
+    }
+  }
+  .about-diverse {
+    padding: 0 258px;
+    .navigation-title {
+      font-size: 60px;
+      margin-bottom: 39px;
+    }
+    .description {
+      padding: 0 220px;
+      margin: auto;
+      font-size: 23px;
+      margin-bottom: 98px;
+    }
+    .video-container {
+      width: 100%;
+      height: 1050px;
+      margin: auto;
+      margin-bottom: 110px;
+      .react-player__preview {
+        background-image: url(/assets/images/about/about_culture.png);
+      }
+      .play-icon {
+        background-color: $primary;
+        padding: 20px 60px;
+        .icon {
+          font-size: 60px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .about-passion {
+    padding: 0 258px;
+    .navigation-title {
+      font-size: 60px;
+      margin-bottom: 83px;
+    }
+    .passion-wrapper {
+      .title {
+        font-size: 1.875em;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .passion-content {
+        font-size: 1.875em;
+      }
+    }
+    .btnWrapper {
+      margin-top: 120px;
+      margin-bottom: 115px;
+      .btnConsultation {
+        width: 476px;
+        height: 126px;
+      }
+    }
+  }
+  .about-corporation {
+    .navigation-title {
+      font-size: 38px;
+      margin-bottom: 125px;
+    }
+    .card-container {
+      margin-bottom: 151px;
+      .card-wrapper {
+        &:not(:last-child) {
+          border-right: 1px solid #DFDFDF;
+        }
+        // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        .corporation-card {
+          .order {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $primary;
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          .title {
+            font-size: 34px;
+            font-weight: bold;
+            margin-left: 16px;
+            color: $primary;
+          }
+          .card-content {
+            .card-text {
+              height: 240px;
+              font-size: 32px;
+            }
+            .image-wrapper {
+              margin-top: 30px;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              img {
+                height: 330px;
+              }
+            }
+          }
+        }
+      }
+      .place-container {
+        padding-top: 153px;
+        padding-bottom: 94px;
+        .text-container {
+          padding-left: 45px;
+        }
+        .navigation-title {
+          font-size: 38px;
+          margin-bottom: 39px;
+        }
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+        .text {
+          margin-top: 35px;
+          font-size: 23px;
+        }
+        .checkAvailable {
+          margin-top: -110px;
+        }
+      }
+    }
+  }
+
+  @include media(1600px) {
+    .navigation {
+      padding: 0 250px;
+    }
+    .about-us-wrapper {
+      padding: 100px 200px;
+    }
+    .about-culture {
+      .card-container {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    }
+    .about-diverse {
+      padding: 0 250px;
+    }
+    .about-passion {
+      padding: 0 250px;
+    }
+  }
+  @include media(1500px) {
+    .navigation {
+      padding: 0 200px;
+    }
+    .about-us-wrapper {
+      padding: 100px 180px;
+    }
+    .about-culture {
+      .card-container {
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+    }
+    .about-diverse {
+      padding: 0 200px;
+    }
+    .about-passion {
+      padding: 0 200px;
+    }
+    .about-corporation {
+      .card-container {
+        .card-wrapper {
+          .corporation-card {
+            .card-content {
+              .card-text {
+                height: 140px;
+              }
+            }
+          }
+        }
+        .place-container {
+          .checkAvailable {
+          }
+        }
+      }
+    }
+  }
+  @include media(1400px) {
+    .image-containter {
+      .about-container {
+        .about-wrapper {
+          padding-left: 120px;
+        }
+      }
+    }
+    .about-us-wrapper {
+      padding: 100px 160px;
+    }
+    .navigation {
+      padding: 0 150px;
+    }
+    .about-culture {
+      .card-container {
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+    }
+    .about-diverse {
+      padding: 0 150px;
+    }
+    .about-passion {
+      padding: 0 150px;
+    }
+    .about-corporation {
+      .card-container {
+        .card-wrapper {
+          .corporation-card {
+            .card-content {
+              .card-text {
+                font-size: 24px;
+                height: 200px;
+              }
+              .image-wrapper {
+                img {
+                  height: 250px;
+                }
+              }
+            }
+          }
+        }
+        .place-container {
+          .text {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  @include media(1200px) {
+    .image-containter {
+      .about-container {
+        .about-wrapper {
+          padding-left: 100px;
+        }
+      }
+    }
+    .about-us-wrapper {
+      padding: 100px 120px;
+    }
+    .navigation {
+      padding: 0 100px;
+    }
+    .about-culture {
+      .card-container {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    }
+    .about-diverse {
+      padding: 0 100px;
+    }
+    .about-passion {
+      padding: 0 100px;
+    }
+    .about-corporation {
+      .card-container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        .card-wrapper {
+          .corporation-card {
+            .card-content {
+              .card-text {
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include media(768px) {
+    .image-containter {
+      .about-container {
+        .about-wrapper {
+          padding-left: 60px;
+          .description {
+            width: 100%;
+            padding-right: 60px;
+          }
+        }
+      }
+    }
+    .about-us-wrapper {
+      padding: 60px 80px;
+    }
+    .navigation {
+      padding: 0 20px;
+    }
+    .about-culture {
+      .card-container {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    .about-diverse {
+      .video-container {
+        width: 100%;
+        height: 233px;
+        margin-bottom: 57px;
+        .play-icon {
+          padding: 10px 30px;
+          .icon {
+            font-size: 30px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .about-diverse {
+      padding: 0 30px;
+    }
+    .about-passion {
+      padding: 0 30px;
+    }
+    .about-corporation {
+      .card-container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        .card-wrapper {
+          &:not(:last-child) {
+            border-right: unset;
+          }
+          .corporation-card {
+            .card-content {
+              .card-text {
+                height: 80px;
+              }
+            }
+          }
+        }
+        .place-container {
+          .navigation-title {
+            font-size: 20px;
+          }
+          .text {
+            font-size: 15px;
+          }
+          .image {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+          .checkAvailable {
+            margin-top: 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @include media(375px) {
+    .navigation-title {
+      font-size: 2em;
+    }
+    .image-containter {
+      height: 350px;
+      .about-container {
+        .about-wrapper {
+          padding-left: 45px;
+          .title {
+            font-size: 28px
+          }
+          .about-text {
+            font-size: 14px;
+          }
+          .description {
+            padding-right: 45px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .about-us-wrapper {
+      padding: 60px 30px;
+      span {
+        font-size: 24px;;
+      }
+      .text {
+        font-size: 15px;
+        margin-top: 32px;
+      }
+    }
+    .navigation {
+      padding: 0 20px;
+    }
+    .btnConsultation {
+      font-size: 1em;
+      width: 100%;
+      height: 60px;
+    }
+    .about-culture {
+      .image-containter {
+        height: 560px;
+        .title {
+          font-size: 28px;
+          padding-left: 40px;
+          padding-right: 0;
+        }
+      }
+      .btnConsultation {
+        margin: 0 30px;
+      }
+      .navigation-title {
+        margin-bottom: 42px;
+      }
+      .card-container {
+        padding-left: 30px;
+        padding-right: 30px;
+        .card-wrapper {
+          .culture-card {
+            .header {
+              height: 72px;
+              font-size: 20px;
+              padding: 20px 35px 20px;
+            }
+          }
+          .card-content {
+            height: 180px;
+            font-size: 16px;
+          }
+        }
+      }
+      .btnWrapper {
+        margin-top: 61px;
+        margin-bottom: 57px;
+      }
+    }
+    .about-diverse {
+      .navigation-title {
+        font-size: 24px;
+        margin-bottom: 23px;
+      }
+      .description {
+        padding: 0;
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 39px;
+      }
+      .video-container {
+      }
+    }
+    .about-passion {
+      .navigation-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+      .passion-wrapper {
+        .title {
+          font-size: 15px;
+        }
+        .passion-content {
+          font-size: 15px;
+        }
+      }
+      .btnWrapper {
+        margin-top: 40px;
+        margin-bottom: 57px;
+        .btnConsultation {
+          width: 100%;
+          height: 60px;
+        }
+      }
+    }
+    .about-corporation {
+      .navigation-title {
+        font-size: 24px;
+        margin-bottom: 105px;
+      }
+      .card-container {
+        margin-bottom: 60px;
+        .card-wrapper {
+          .corporation-card {
+            .order {
+              font-size: 20px;
+            }
+            .title {
+              font-size: 18px;
+            }
+            .card-content {
+              .card-text {
+                font-size: 16px;
+                height: fit-content;
+              }
+              .image-wrapper {
+                img {
+                  height: 196px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .place-container {
+          padding-top: 25px !important;
+          padding-bottom: 30px !important;
+          .text-container {
+            padding-left: 18.5px;
+          }
+          .text {
+            margin-top: 17px;
+          }
+          .checkAvailable {
+            font-size: 1em;
+            margin-top: 24px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

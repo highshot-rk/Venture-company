@@ -1,0 +1,201 @@
+.contact-form {
+  padding-left: 95px;
+  padding-right: 70px;
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 8px;
+    .title-black {
+      font-size: 65px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .title-small {
+      font-size: 25px;
+      font-weight: 500;
+      color: $primary
+    }
+  }
+  .title-description {
+    font-size: 1.25em;
+    margin-top: 16px;
+    margin-bottom: 34px;
+  }
+  .contact-card {
+    .reason-title {
+      font-size: 25px;
+      font-weight: 500;
+      color: #505050;
+    }
+    .about-you {
+      margin-top: 45px;
+      font-size: 25px;
+      font-weight: 500;
+      color: $primary;
+      text-transform: uppercase;
+    }
+    .contact-textarea {
+      .content-description {
+        font-size: 1.25em;
+        opacity: 0.72;
+      }
+    }
+    .select-service {
+      margin-top: 29px;
+      width: 100%;
+      .MuiInputBase-root.Mui-focused {
+        border: 1px solid rgba(0, 161, 241, 0.84);
+      }
+    }
+    .phone-number {
+      margin-top: 42px;
+    }
+    .email {
+      margin-top: 58px;
+    }
+    .select-country {
+      margin-top: 58px;
+      width: 100%;
+      .MuiInputBase-root.Mui-focused {
+        border: 1px solid rgba(0, 161, 241, 0.84);
+      }
+    }
+    .btnSubmit {
+      padding: 15px 16px;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.5em;
+      height: 126px;
+      margin-top: 23px;
+    }
+  }
+  @include media(1600px) {
+    .title-wrapper {
+      .title-black {
+        font-size: 60px;
+      }
+      .title-small {
+        font-size: 25px;
+      }
+    }
+    .title-description {
+      font-size: 1.25em;
+    }
+    .contact-card {
+      .reason-title {
+        font-size: 20px;
+      }
+      .about-you {
+        font-size: 20px;
+      }
+      .contact-textarea {
+        .content-description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @include media(1500px) {
+    .title-wrapper {
+      .title-black {
+        font-size: 50px;
+      }
+      .title-small {
+        font-size: 20px;
+      }
+    }
+    .title-description {
+      font-size: 1em;
+    }
+  }
+  @include media(1200px) {
+    .title-wrapper {
+      .title-black {
+        font-size: 45px;
+      }
+      .title-small {
+        font-size: 20px;
+      }
+    }
+    .title-description {
+      font-size: 1em;
+    }
+    .contact-card {
+      .btnSubmit {
+        height: 100px;   
+      }
+    }
+  }
+  @include media(767px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    .title-wrapper {
+      .title-black {
+        font-size: 1.5em;
+      }
+      .title-small {
+        font-size: 1.1em;
+      }
+    }
+    .contact-card {
+      .reason-title {
+        margin-top: -75px;
+      }
+      .contact-textarea {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+      }
+      .btnSubmit {
+        height: 60px;
+        font-size: 16px;
+      }
+    }
+  }
+  @include media(375px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    .title-wrapper {
+      .title-black {
+        font-size: 24px;
+      }
+      .title-small {
+        font-size: 13px;
+      }
+    }
+    .title-description {
+      font-size: 15px;
+      margin-top: 28px;
+      margin-bottom: 0;
+    }
+    .contact-card {
+      .reason-title {
+        margin-top: -75px;
+      }
+      .about-you {
+        margin-top: 35px;
+      }
+      .phone-number {
+        margin-top: 24px;
+      }
+      .email {
+        margin-top: 24px;
+      }
+      .select-country {
+        margin-top: 24px;
+      }
+      .btnSubmit {
+        height: 60px;
+        font-size: 16px;
+      }
+      .contact-textarea {
+        .content-description {
+          margin-top: 8px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

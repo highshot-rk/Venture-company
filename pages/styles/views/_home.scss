@@ -1,0 +1,1072 @@
+.home {
+  margin-top: -$topbar-height;
+  .title {
+    font-size: 2.25em;
+    color: #202A36;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .border {
+    border-bottom: 6px solid $primary;
+  }
+  .black {
+    color: #000000;
+  }
+  .primary {
+    color: $primary;
+  }
+  .description {
+    font-size: 1.125em;
+    color: #ffffff;
+    margin: auto;
+  }
+  .btnConsultation {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 464px;
+    height: 97px;
+  }
+  .home-header {
+    color: #ffffff;
+    position: relative;
+    .container {
+      position: absolute;
+      top: 307.5px;
+      left: 139px;
+      z-index: 10;
+      .title {
+        font-size: 73px;
+        color: #ffffff;
+        width: 660px;
+        line-height: 80px;
+        margin-bottom: 39.5px;
+      }
+      .find-out {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin-bottom: 26px;
+        svg {
+          color: $primary;
+          margin-left: 8px;
+        }
+      }
+      .description {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 55px;
+        width: 700px;
+      }
+      .btnWrapper {
+        .btnSubmit {
+          padding: 15px 16px;
+          width: 332px;
+          height: 76px;
+          font-size: 20px;
+          border: 2px solid rgba(255, 255, 255, 1);
+          &:hover {
+            background-color: $primary;
+            border-color: $primary;
+          }
+        }
+      }
+    }
+    .gradient {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to left, transparent 30%, rgba(0, 0, 0, 0.6)), linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.6));
+    }
+    .navigation {
+      position: absolute;
+      bottom: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 140px;
+      .MuiBottomNavigationAction-root {
+        font-size: 20px;
+      }
+    }
+  }
+  .home-questions {
+    padding: 115px 178px 96px 143px;
+    .question-container {
+      .question-title {
+        font-size: 41px;
+        color: #707070;
+        margin-bottom: 51px;
+      }
+      .question-description {
+        font-size: 26px;
+        margin-bottom: 33px;
+        color: #586376;
+      }
+      .question-wrapper {
+        margin-bottom: 50px;
+        .question-step {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #586376;
+          .question {
+            font-size: 30px;
+            font-weight: bold;
+            flex: 1;
+          }
+          .step {
+            font-size: 20px;
+          }
+        }
+        .question-content {
+          margin-top: 47px;
+          display: flex;
+          flex-wrap: wrap;
+          & > * {
+            margin: 5px 8px;
+          }
+          .chip {
+            font-weight: bold;
+            min-width: 200px;
+            font-size: 28px;
+            padding: 0 20px;
+            height: 57px;
+          }
+          .see-all {
+            font-size: 26px;
+            color: #586376;
+            cursor: pointer;
+            text-decoration: underline;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .question-img {
+      border-radius: 20px;
+    }
+    .left-border {
+      font-size: 35px;
+      font-weight: 500;
+      color: #202A36;
+      padding-left: 18px;
+      border-left: 5px solid $primary;
+      margin-top: 80px;
+      margin-right: -120px;
+    }
+  }
+  .home-values {
+    text-align: center;
+    padding: 0 308px 114px;
+    .title {
+      margin-bottom: 62px;
+    }
+    .card-container {
+      .card-wrapper {
+        .card-header {
+          height: 135px;
+          background: $primary;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 37px;
+          padding-right: 22px;
+          .text {
+            color: #ffffff;
+            font-size: 29px;
+            font-weight: bold;
+            max-width: 224px;
+            flex: 1;
+          }
+          .circle {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+          }
+        }
+        .card-text {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          padding: 29px 37px 0;
+          height: 273px;
+          font-size: 18px;
+          text-align: left;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .home-overview {
+    padding: 0px 245px;
+    text-align: center;
+    .text {
+      text-align: left;
+      height: 260px;
+      font-size: 23px;
+      margin-top: 63px;
+      overflow: hidden;
+      position: relative;
+      line-height: 36px;
+      &.readMore {
+        height: unset;
+      }
+    }
+    .btnReadMore {
+      margin-top: 27px;
+      font-size: 20px;
+    }
+    .blur {
+      text-align: left;
+      margin-top: 0px;
+      filter: blur(5px);
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .grants-content {
+      line-height: 48px;
+      font-size: 23px;
+    }
+    .service-container {
+      margin-top: 200px;
+    }
+    .video-container {
+      width: 100%;
+      height: 400px;
+      margin: auto;
+      .react-player__preview {
+        background-image: url(/assets/images/contact/services-overlay.png);
+      }
+      .play-icon {
+        background-color: $primary;
+        padding: 20px 60px;
+        .icon {
+          font-size: 60px;
+          color: #ffffff;
+        }
+      }
+    }
+    .service-content {
+      font-size: 23px;
+      line-height: 48px;
+      margin-top: 39px;
+      padding-left: 20px;
+    }
+  }
+  .home-client {
+    padding-top: 89px;
+    padding-bottom: 128px;
+    text-align: center;
+    .title {
+      font-size: 50px;
+    }
+    .client-image-container {
+      margin-top: 143px;
+      .word-container {
+        position: relative;
+        padding: 20px 80px;
+        .word-card {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.54);
+          text-align: left;
+          height: 340px;
+          padding: 30px 50px 0 84px;
+          .image {
+            position: absolute;
+            top: 13px;
+            left: 15px;
+          }
+          .word {
+            font-size: 20px;
+            line-height: 35px;
+            height: 200px;
+            overflow: hidden;
+          }
+          .rate-container {
+            margin-top: 22px;
+          }
+          .name {
+            font-size: 20px;
+            margin-top: 16px;
+            margin-left: -20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+    .btnWrapper {
+      margin-top: 84px;
+      .btnConsultation {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+        width: 476px;
+        height: 126px;
+      }
+    }
+  }
+  .home-company {
+    padding-left: 205px;
+    padding-right: 205px;
+    padding-top: 55px;
+    .title {
+      font-size: 2em;
+    }
+    .application {
+      text-align: center;
+      .title {
+        font-size: 55px;
+        color: #202A36;
+        text-transform: initial;
+        margin-bottom: 34px;
+        line-height: 70px;
+        font-weight: normal;
+      }
+      .sub-title {
+        font-size: 38px;
+        color: #586376;
+      }
+      .btnWrapper {
+        margin-top: 55px;
+        margin-bottom: 59px;
+      }
+    }
+    .feature-content {
+      text-align: center;
+      .title {
+        font-size: 60px;
+        margin-bottom: 33px;
+        line-height: 70px;
+        font-weight: normal;
+      }
+      position: relative;
+      .gray-container {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 182px;
+        background: #F3F3F3;
+      }
+      .company-card-container {
+        padding-bottom: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .company-card {
+          z-index: 10;
+          background-color: #ffffff;
+          width: 212px;
+          height: 212px;
+          border-radius: 50%;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.28);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .home-sectors {
+    text-align: center;
+    .title {
+      font-size: 65px;
+      line-height: 70px;
+      margin-bottom: 19px;
+    }
+    .description {
+      font-size: 23px;
+      color: #707070;
+      margin-bottom: 101px;
+    }
+    .sector-container {
+      .chart-container {
+        .victory-chart {
+          position: relative;
+          .small-chart {
+            position: absolute;
+            width: calc(100% - 46px);
+            top: 23px;
+            left: 23px;
+          }
+          .value-label {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 71px;
+            line-height: 107px;
+            color: #051057;
+          }
+        }
+        .card-wrapper {
+          box-shadow: 0 1px 8px rgba(0, 161, 241, 0.12);
+          .card-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 42px;
+            border-bottom: 1px solid rgba(112, 112, 112, 0.23);
+            .value {
+              font-size: 70px;
+              color: #5CAFCE;
+            }
+            .chart-title {
+              font-size: 30px;
+              color: #707070;
+              margin-left: 16px;
+            }
+          }
+          .card-content {
+            height: 350px;
+            padding: 20px;
+            &.victory {
+              padding: 20px 74px;
+            }
+          }
+        }
+      }
+    }
+    .btnWrapper {
+      margin-top: 59.5px;
+      margin-bottom: 101px;
+    }
+  }
+  .home-insights {
+    text-align: center;
+    .title {
+      font-size: 65px;
+      line-height: 70px;
+      margin-bottom: 106px;
+    }
+    .card-container {
+      padding: 0px 210px 148px;
+      .card-wrapper {
+        text-align: left;
+        .card-content {
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+          display: flex;
+          flex-direction: column;
+          .card-wrapper {
+            padding: 20px 16px;
+          }
+          img {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.44);
+          }
+          .primary-title {
+            color: $primary;
+            font-weight: 500;
+            height: 100px;
+          }
+          .card-title {
+            font-size: 18px;
+            font-weight: 500;
+            height: 120px;
+          }
+          .description {
+            margin-bottom: 60px;
+            color: #202A36;
+          }
+          .card-read-more {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            color: $primary;
+            font-size: 20px;
+            .share {
+              color: #000000;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+          .description {
+            height: 75px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+  .home-subscribe {
+    padding: 149px 139px 173px 285px;
+    background: #E0F3FC;
+    display: flex;
+    justify-content: space-between;
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 55px;
+        line-height: 65px;
+        margin-bottom: 26px;
+        max-width: 1030px;
+        text-transform: inherit;
+      }
+      .text {
+        font-size: 24px;
+        margin-bottom: 47px;
+        max-width: 690px;
+      }
+      .footer-input {
+        width: 517px;
+        .MuiOutlinedInput-root {
+          border-radius: 0;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          &:hover {
+            background: #9A9B9F;
+            color: #ffffff;
+            .MuiOutlinedInput-notchedOutline {
+              border: unset;
+            }
+            .MuiInputBase-input::placeholder {
+              color: #ffffff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .btnSubmit {
+        width: 177px;
+        height: 73px;
+        font-size: 22px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+  .home-venture {
+    height: 788px;
+    background-image: url('/assets/images/home/venture.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-left: 145px;
+    .container {
+      padding-top: 363px;
+      color: #ffffff;
+      .small {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 42px;
+        text-transform: uppercase;
+      }
+      .title {
+        font-size: 75px;
+        text-transform: inherit;
+        color: #ffffff;
+        line-height: 100px;
+      }
+      .btnWrapper {
+        margin-top: 32px;
+        .btnSubmit {
+          width: 332px;
+          height: 76px;
+          font-size: 20px;
+          border: 2px solid rgba(255, 255, 255, 1);
+          &:hover {
+            background-color: $primary;
+            border-color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .university-wrapper {
+    padding: 70px 45px 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      margin: 10px;
+    }
+  }
+
+  @include media(1700px) {
+    .home-header {
+      .container {
+        top: 250px;
+      }
+    }
+    .home-values {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+    .university-wrapper {
+      justify-content: center;
+    }
+  }
+
+  @include media(1600px) {
+    .home-header {
+      .container {
+        top: 200px;
+        .title {
+          font-size: 60px;
+        }
+      }
+    }
+    .home-sectors {
+      .sector-container {
+        .chart-container {
+          .card-wrapper {
+            .card-header {
+              .value {
+                font-size: 60px;
+              }
+              .chart-title {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @include media(1500px) {
+    .home-header {
+      .container {
+        top: 150px;
+        .title {
+          font-size: 50px;
+        }
+        .description {
+          font-size: 24px;
+        }
+      }
+    }
+    .home-values {
+      padding-left: 200px;
+      padding-right: 200px;
+      .card-container {
+        .card-wrapper {
+          .card-header {
+            padding-left: 22px;
+            .text {
+              font-size: 24px;
+            }
+            .circle {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .home-company {
+      .feature-content {
+        .company-card-container {
+          .company-card {
+            width: 180px;
+            height: 180px;
+          }
+        }
+      }
+    }
+    .home-subscribe {
+      padding-left: 200px;
+      .text-container {
+        margin-right: 50px;
+      }
+    }
+  }
+  @include media(1400px) {
+    .home-header {
+      .container {
+        .title {
+          font-size: 50px;
+        }
+        .description {
+          font-size: 24px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .home-values {
+      .card-container {
+        .card-wrapper {
+          .card-text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .home-company {
+      .feature-content {
+        .company-card-container {
+          .company-card {
+            width: 160px;
+            height: 160px;
+          }
+        }
+      }
+    }
+    .home-insights {
+      .card-container {
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+    }
+  }
+  @include media(1200px) {
+  }
+  @include media(767px) {
+  }
+  @include media(375px) {
+    .btnSubmit {
+      width: 100%;
+      height: 60px;
+      font-size: 16px;
+    }
+    .home-header {
+      .container {
+        left: 0px;
+        top: 234px;
+        padding-left: 40px;
+        padding-right: 40px;
+        .title {
+          font-size: 28px;
+          width: 100%;
+          line-height: 34px;
+          margin-bottom: 32px;
+        }
+        .find-out {
+          font-size: 14px;
+        }
+        .description {
+          width: 100%;
+          font-size: 14px;
+          margin-bottom: 49px;
+          line-height: 20px;
+        }
+        .btnWrapper {
+          .btnSubmit {
+            width: 100%;
+            height: 60px;
+            font-size: 16px;
+          }
+        }
+      }
+      .navigation {
+        padding-left: 40px;
+        .MuiBottomNavigationAction-root {
+          font-size: 14px;
+        }
+      }
+    }
+    .home-questions {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 54px;
+      padding-bottom: 56px;
+      .question-grid {
+        order: 1;
+      }
+      .question-container {
+        margin-top: -24px;
+        .question-title {
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+        .question-description {
+          font-size: 15px;
+          margin-bottom: 20px;
+        }
+        .question-wrapper {
+          .question-step {
+            flex-wrap: wrap;
+            .question {
+              font-size: 18px;
+              width: 100%;
+              flex: unset;
+            }
+            .step {
+              font-size: 14px;
+              margin-top: 13px;
+            }
+          }
+          .question-content {
+            margin-top: 25px;
+            .chip {
+              font-size: 14px;
+              height: 37px;
+              min-width: unset;
+            }
+          }
+        }
+      }
+      .left-border {
+        border-left: none;
+        font-size: 20px;
+        margin-top: 0px;
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+    .home-values {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px;
+      .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      .card-container {
+        .card-wrapper {
+          .card-header {
+            padding-left: 16px;
+            padding-right: 16px;
+            .text {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    .home-overview {
+      padding: 0 40px;
+      .title {
+        font-size: 24px;
+      }
+      .text {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+      .service-container {
+        margin-top: 40px;
+      }
+      .service-content {
+        margin-top: 24px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .home-client {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .title-wrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .title {
+        font-size: 24px;
+        line-height: 34px;
+      }
+      .client-image-container {
+        margin-top: 40px;
+        .word-container {
+          padding: 20px 40px;
+          .word-card {
+            padding: 30px 16px 0 40px;
+            margin-left: 40px;
+            .image {
+              left: 35px;
+              top: 40px;
+              img {
+                width: 78px;
+              }
+            }
+            .word {
+              font-size: 14px
+            }
+            .name {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .btnWrapper {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 30px;
+        .btnConsultation {
+          height: 60px;
+          font-size: 16px;
+        }
+      }
+    }
+    .home-company {
+      padding-left: 40px;
+      padding-right: 40px;
+      .application {
+        .title {
+          font-size: 32px;
+          line-height: 40px;
+          margin-bottom: 16px;
+        }
+        .sub-title {
+          font-size: 16px;
+        }
+        .btnWrapper {
+          margin-top: 32px;
+          margin-bottom: 34px;
+          .btnConsultation {
+            height: 60px;
+            font-size: 16px;
+          }
+        }
+      }
+      .feature-content {
+        padding-left: 0px;
+        padding-right: 0px;
+        .title {
+          font-size: 24px;
+          line-height: 34px;
+          margin-bottom: 0;
+        }
+        .company-card-container {
+          margin-top: 24px;
+          padding-bottom: 42px;
+          flex-wrap: wrap;
+          justify-content: center;
+          .company-card {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            img {
+              width: 68px;
+            }
+          }
+        }
+        .gray-container {
+          height: 376px;
+        }
+      }
+    }
+    .home-sectors {
+      padding-left: 40px;
+      padding-right: 40px;
+      .title {
+        font-size: 24px;
+        line-height: 34px;
+      }
+      .description {
+        font-size: 16px;
+      }
+      .sector-container {
+        .chart-container {
+          .card-wrapper {
+            .card-header {
+              .value {
+                font-size: 32px;
+              }
+              .chart-title {
+                font-size: 18px;
+              }
+            }
+            .card-content {
+              height: 300px;
+              &.victory {
+                padding-left: 40px;
+                padding-right: 40px;
+              }
+            }
+          }
+        }
+        .victory-chart {
+          .value-label {
+            font-size: 49px;
+          }
+        }
+      }
+      .btnWrapper {
+        margin-top: 40px;
+        margin-bottom: 56px;
+        .btnConsultation {
+          height: 60px;
+          font-size: 16px;
+        }
+      }
+    }
+    .home-insights {
+      .title {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 37px;
+        font-size: 24px;
+        line-height: 34px;
+      }
+      .card-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 73px;
+        .card-wrapper {
+          .card-content {
+            .primary-title {
+              height: 58px;
+            }
+            .card-title {
+              height: 78px;
+            }
+            .description {
+              margin-bottom: 0;
+            }
+            .card-read-more {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .home-subscribe {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 16px;
+        text-transform: inherit;
+      }
+      .text {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .footer-input {
+        margin-top: 32px;
+        margin-bottom: 16px;
+      }
+    }
+    .home-venture {
+      height: 776px;
+      background-image: url(/assets/images/home/venture-mobile.png);
+      padding-left: 40px;
+      padding-right: 40px;
+      .container {
+        padding-top: 134px;
+        .small {
+          font-size: 16px;
+          margin-bottom: 11px;
+        }
+        .title {
+          font-size: 32px;
+          height: 48px;
+        }
+        .btnWrapper {
+          margin-top: 34px;
+          .btnSubmit {
+            width: 100%;
+            height: 60px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .university-wrapper {
+      padding: 40px;
+      .image-wrapper {
+        padding: 20px;
+        width: 50%;
+      }
+    }
+  }
+}
